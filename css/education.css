@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+#school {
+	width: 1000px;
+    max-width: 100%;
+	margin: 100px auto;
+	font-family: 'Raleway', 'Open Sans', Helvetica;
+}
+
+.education_card{
+	width: 300px;
+	background: rgb(255, 255, 255);
+	display: inline-table;
+	top: 0;
+}
+
+.education_card:not(:last-child){
+	margin-right: 40px;
+}
+
+.header {
+    height: 250px;
+	color: rgb(255, 255, 255);
+}
+
+.alpha .header{
+	background: #13294b;
+}
+
+.bravo .header{
+	/*background: #c90016;*/
+    background: #800000;
+}
+
+.charlie .header{
+	background: #2980B9;
+}
+
+.name{
+	width: 100%;
+	font-size: 1.25em;
+	font-weight: 700;
+	display: block;
+	text-align: center;
+	padding: 25px 0 25px;
+}
+
+.features{
+	list-style: none;
+	text-align: center;
+    color: black;
+	margin: 0;
+	padding: 15px;
+    height: 300px;
+}
+
+.features li{
+	margin: auto;
+	padding: 20px 15px;
+	width: 200px;
+}
+
+.features li:not(:first-child) {
+    height: 125px;
+}
+
+.features li:not(:last-child){
+	border: 1px solid rgb(215, 215, 215);
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 0 auto;
+    padding-top: 20px;
+    width: 35%;
+}
+
+.description {
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 2px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    cursor: pointer;
+}
+
+/*Mobile Responsiveness*/
+@media only screen and (max-width: 768px) {
+    .logo {
+        width: 20%;
+    }
+    .education_card {
+        width: 75%;
+        display: block;
+        margin: 0 auto 0 auto;
+    }
+    .education_card:not(:last-child){
+        margin: 0 auto 15px auto;
+    }
+    .features {
+        margin: 0 auto 0 auto;
+    }
+    .features li {
+        margin: 0 auto 0 auto;
+    }
+    .name {
+        font-size: .9em;
+    }
+    .books_image {
+        margin-top: 30px;
+    }
+}

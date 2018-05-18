@@ -1,0 +1,96 @@
+.grid {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    ". project_one project_two project_three .";
+    grid-gap: 3%;
+    text-align: center;
+}
+
+.project_card {
+    /* border: 1px solid #3498DB; */
+    border-radius: 2px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    cursor: pointer;
+    /* width: 350px; */
+}
+
+.project_one {
+    grid-area: project_one;
+    background-color: white;
+    min-height: 250px;
+}
+
+.project_two {
+    grid-area: project_two;
+    background-color: white;
+    min-height: 250px;
+}
+
+.project_three {
+    grid-area: project_three;
+    background-color: white;
+    min-height: 250px;
+}
+
+.project_title {
+    height: 250px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+
+.test {
+    height: 150px;
+    overflow: hidden;
+}
+
+.project_image {
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.project_info {
+    list-style: none;
+    text-align: center;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+.project_info li {
+    margin: 0 35px;
+    padding: 20px 15px;
+    height: 160px;
+    /* width: 200px; */
+}
+
+.project_info li:not(:last-child) {
+    border: 1px solid rgb(215, 215, 215);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.project_info li:last-child {
+    height: 100px;
+}
+
+.one {
+    background-color: #195073;
+}
+
+.two {
+    background-color: #1F6E56;
+}
+
+.three {
+    background-color: #EB5937;
+}
+
+.github {
+    padding: auto;
+}
